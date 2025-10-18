@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnimeWorld - Thiên đường anime của bạn</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+    <div id="pageLoader" class="page-loader">
+        <div class="spinner"></div>
+        <p>Đang tải nội dung...</p>
+    </div>
+
+    <header>
+        <div class="container header-content">
+            <a href="#" class="logo">
+                <i class="fas fa-dragon"></i> Anime<span>World</span>
+            </a>
+
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#" class="nav-link active" data-section="home"><i class="fas fa-home"></i> Trang Chủ</a></li>
+                    <li><a href="#" class="nav-link" data-section="popular"><i class="fas fa-fire"></i> Phổ Biến</a></li>
+                    <li><a href="#" class="nav-link" data-section="new"><i class="fas fa-star"></i> Mới Nhất</a></li>
+                    <li><a href="#" class="nav-link" data-section="genre"><i class="fas fa-list"></i> Thể Loại</a></li>
+                </ul>
+            </nav>
+            
+            <div class="right-side">
+                <div class="search-box">
+                    <input type="text" placeholder="Tìm kiếm anime...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+                <div class="user-actions">
+                    <a href="#" class="login-btn"><i class="fas fa-sign-in-alt"></i> Đăng Nhập</a>
+                    <a href="#" class="signup-btn"><i class="fas fa-user-plus"></i> Đăng Ký</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="banner">
+            <div class="banner-content">
+                <h1>Demon Slayer: Kimetsu no Yaiba</h1>
+                <p>Tanjiro Kamado trở thành thợ săn quỷ sau khi gia đình bị sát hại. Cậu quyết tâm cứu em gái Nezuko khỏi lời nguyền quỷ.</p>
+                <button class="btn btn-play" data-video="assets/video/anime.mp4"><i class="fas fa-play"></i> Xem Trailer</button>
+            </div>
+        </section>
+
+        <section id="anime-section">
+            <h2 class="section-title">Anime Phổ Biến</h2>
+            <div class="movies-container" id="moviesContainer"></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Giới Thiệu</h3>
+                    <p>AnimeWorld là trang web xem anime trực tuyến chất lượng cao...</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://x.com/"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://discord.com/"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Thể Loại</h3>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-arrow-right"></i> Hành Động</a></li>
+                        <li><a href="#"><i class="fas fa-arrow-right"></i> Phiêu Lưu</a></li>
+                        </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Liên Kết Nhanh</h3>
+                    <ul>
+                         <li><a href="#"><i class="fas fa-arrow-right"></i> Trang Chủ</a></li>
+                         </ul>
+                </div>
+                 <div class="footer-column">
+                    <h3>Hỗ Trợ</h3>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-arrow-right"></i> Câu Hỏi Thường Gặp</a></li>
+                        </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 AnimeWorld. Tất cả các quyền được bảo lưu.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="videoModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <video id="animeVideoPlayer" controls></video>
+        </div>
+    </div>
+</body>
+</html>
